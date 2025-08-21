@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "setup ",
+  "type": "module",
   "keywords": [
     "javascript"
   ],
@@ -9,6 +10,9 @@
   "author": "Nikhil Bhatt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
