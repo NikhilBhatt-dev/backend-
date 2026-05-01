@@ -1,19 +1,16 @@
 {
-  "name": "backend",
+  "name": "complete_backend",
   "version": "1.0.0",
-  "description": "setup ",
-  "type": "module",
-  "keywords": [
-    "javascript"
-  ],
-  "license": "ISC",
-  "author": "Nikhil Bhatt",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
