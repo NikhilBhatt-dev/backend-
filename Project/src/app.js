@@ -21,7 +21,7 @@ const result = await uploadFile(req.file.buffer)
 
 const post = await postModel.create({
     image: result.url,
-    caption,
+    caption:req.body.caption 
 });
 
 return res.status(201).json({
@@ -33,6 +33,17 @@ return res.status(201).json({
     console.error("Create post error:", error.message);
     return res.status(500).json({ message: error.message });
 }
+})
+
+
+app.get("/posts", async (req,res) => {
+    const post = await postModel.find()
+
+    return res.status(200).json({
+        message: "Post created successfully",
+        post,
+    });     
+
 })
 
 module.exports = app
